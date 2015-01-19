@@ -7,7 +7,7 @@
 		      <meta name="description" content="">
 		      <meta name="author" content="">
 		  
-	    <title>alert</title>
+	    <title>初始化页面</title>
 		<!-- 新 Bootstrap 核心 CSS 文件 -->
 		<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 
@@ -19,21 +19,24 @@
 
 		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 		<script src="bootstrap.min.js"></script>
-		<script src="logic.js"></script>
-		 <style>
-		      body {
-		        min-width: 374px;
-		        overflow-x: hidden;
-		      }
-		
-		      img {
-		        margin: 5px;
-		        border: 2px solid black;
-		        vertical-align: middle;
-		        width: 75px;
-		        height: 75px;
-		      }
-		    </style>
+		<script src="spin.min.js"></script>
+		<script src="jquery.spin.js"></script>
+		<script src="initialize.js"></script>
+	 <style>
+	      body {
+	        min-width: 374px;
+	        overflow-x: hidden;
+			min-height: 374px;
+	      }
+	
+	      img {
+	        margin: 5px;
+	        border: 2px solid black;
+	        vertical-align: middle;
+	        width: 75px;
+	        height: 75px;
+	      }
+	    </style>
 	
 	    <!--
 	      - JavaScript and HTML must be in separate files: see our Content Security
@@ -42,35 +45,6 @@
 	      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
 	     -->
 	  </head>
-	  <body>
-	 <div class="container-fluid">
-
-	      <form class="form-signin" role="form">
-  	        <h2 class="form-signin-heading text-center">微笑</h2>
-	        <h4 class="form-signin-heading ">登陆:</h4>
-				<div class="form-group">
-	        <input type="text" class="form-control" placeholder="Email" id="login-email">
-		</div>
-			<div class="form-group">
-	        <input type="password" class="form-control" placeholder="密码" id="login-password" >
-		</div>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-xs-6">
-					 <button class="btn btn-primary btn-block" id="login-btn">登陆</button>
-				</div>
-				<div class="col-xs-6">
-					<button class="btn btn-warning btn-block" id="re-btn">注册</button>
-				</div>
-		   </div>
-	   </div>
-	      </form>
-
-	    </div> <!-- /container -->
-	 <div>
-	 </div>
+	  <body id="page">
 	  </body>
-	  <foot>
-		  <h5 class='text-center'>美好的一天</h5>
-	  </foot>
 	</html>

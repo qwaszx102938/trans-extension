@@ -10,7 +10,10 @@
 		},
 		function(data,status){
 		 //console.log(data.message.result);
-		 chrome.storage.local.set({'userInfo':data.token}, function() {
+		 chrome.storage.local.set({'userInfo':
+		 {"token":data.token,
+		  "email":data.email
+	 }}, function() {
 			             // Notify that we saved.
 			           });
 					   alert(data.message.result)
@@ -20,7 +23,9 @@
 		$("#re-btn").click(function(event){
 		        event.preventDefault(); 
 			    chrome.storage.local.get('userInfo', function(data) {
-					alert(data.userInfo.token);
+					var a;
+					console.log(data.userInfo);
+					//data.userInfo.token);
 			           });
 			});
 		
